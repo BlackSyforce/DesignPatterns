@@ -1,3 +1,6 @@
+/**
+ * Check to see if the string contains numbers.
+ */
 var hasNumbers = function(str) {
 	for (var i = 0; i < str.length; i++) {
 		if (str.charCodeAt(i) > 47 && str.charCodeAt(i) < 58) {
@@ -8,6 +11,9 @@ var hasNumbers = function(str) {
 	return false;
 }
 
+/**
+ * Check to see if the string contains lowercase characters.
+ */
 var hasLowecase = function(str) {
 	for (var i = 0; i < str.length; i++) {
 		if (str.charCodeAt(i) > 96 && str.charCodeAt(i) < 123) {
@@ -18,6 +24,9 @@ var hasLowecase = function(str) {
 	return false;
 };
 
+/**
+ * Check to see if the string contains uppercase characters.
+ */
 var hasUppercase = function(str) {
 	for (var i = 0; i < str.length; i++) {
 		if (str.charCodeAt(i) > 64 && str.charCodeAt(i) < 91) {
@@ -28,6 +37,9 @@ var hasUppercase = function(str) {
 	return false;
 }
 
+/**
+ * Check to see if the string contains special characters.
+ */
 var hasSpecialCharacters = function(str) {
 	for (var i = 0; i < str.length; i++) {
 		if ((str.charCodeAt(i) > 32 && str.charCodeAt(i) < 48) || 
@@ -40,8 +52,11 @@ var hasSpecialCharacters = function(str) {
 	return false;
 }
 
+/**
+ * Check to see if the string has 8 or more characters.
+ */
 var hasLength = function(str) {
-	return (str && str.length > 8);
+	return (str && str.length > 7);
 }
 
 var Checker = function(fun, next) {
